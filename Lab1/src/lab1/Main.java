@@ -36,6 +36,22 @@ public class Main {
 			order = new CoffeeBeverage();
 			order = new HouseBlend();
 			((CoffeeBeverage) order).setSize(disArr[i]);
+		} else if(beveStr.equals("decaf")) {
+			order = new CoffeeBeverage();
+			order = new Decaf();
+			((CoffeeBeverage) order).setSize(disArr[i]);
+		} else if(beveStr.equals("decaf mocha")){
+			order = new Decaf();
+			((CoffeeBeverage) order).setSize(disArr[i]);
+			order = new Chocolate(order);
+		} else if(beveStr.equals("decaf latte")){
+			order = new Decaf();
+			((CoffeeBeverage) order).setSize(disArr[i]);
+			order = new Milk(order);
+		} else if(beveStr.equals("decaf cappuccino")){
+			order = new Decaf();
+			((CoffeeBeverage) order).setSize(disArr[i]);
+			order = new WhipCream(order);
 		} else if (beveStr.equals("mocha")) {
 			order = new Espresso();
 			((CoffeeBeverage) order).setSize(disArr[i]);
