@@ -16,7 +16,7 @@ public class GingerTest {
 
 	@Test(timeout = 1000)
 	public void testGetDescriptionAndCost() {
-		Assert.assertEquals(" ginger", ginger.getDescription());
+		Assert.assertEquals("GreenTea ginger", ginger.getDescription());
 		Assert.assertEquals(2.1 , ginger.cost(), 0);
 	}
 }

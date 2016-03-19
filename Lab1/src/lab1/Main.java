@@ -115,7 +115,7 @@ public class Main {
 			((BeverageWithIngredient) order).getDescription();
 		} else if (order instanceof Espresso) {
 			((Espresso) order).getDescription();
-		}
+		} 
 		// and so on...
 
 		DecimalFormat df = new DecimalFormat(".0");

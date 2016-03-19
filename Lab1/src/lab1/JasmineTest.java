@@ -16,7 +16,7 @@ public class JasmineTest {
 
 	@Test(timeout = 1000)
 	public void testGetDescriptionAndCost() {
-		Assert.assertEquals(" jasmine", jasmine.getDescription());
+		Assert.assertEquals("GreenTea jasmine", jasmine.getDescription());
 		Assert.assertEquals(2.2, jasmine.cost(), 0);
 	}
 }
