@@ -1,8 +1,13 @@
-package lab1;
+package test;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import lab1.Decaf;
+import lab1.Espresso;
+import lab1.Milk;
+import lab1.RedTea;
 
 public class MilkTest {
 	Milk milk;

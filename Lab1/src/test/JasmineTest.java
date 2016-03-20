@@ -1,8 +1,11 @@
-package lab1;
+package test;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import lab1.GreenTea;
+import lab1.Jasmine;
 
 public class JasmineTest {
 	Jasmine jasmine;

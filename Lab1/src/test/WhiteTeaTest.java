@@ -1,8 +1,10 @@
-package lab1;
+package test;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import lab1.WhiteTea;
 
 public class WhiteTeaTest {
 	WhiteTea wt;

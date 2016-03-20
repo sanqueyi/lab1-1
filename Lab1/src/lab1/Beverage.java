@@ -6,7 +6,5 @@ public abstract class Beverage {
 	public String getDescription(){
 		return description;
 	}
-	public double cost() {
-		return 0;
-	}
+	public abstract double cost();
 }
