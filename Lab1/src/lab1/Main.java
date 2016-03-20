@@ -54,7 +54,7 @@ public class Main {
 			order = new WhipCream(order);
 		} else if (beveStr.equals("mocha")) {
 			order = new Espresso();
-			((CoffeeBeverage) order).setSize(disArr[i]);
+			((CoffeeBeverage)order).setSize(disArr[i]);
 			order = new Chocolate(order);
 		} else if (beveStr.equals("latte")) {
 			order = new Espresso();
@@ -121,5 +121,6 @@ public class Main {
 		DecimalFormat df = new DecimalFormat(".0");
 		System.out.println("The total cost of your order is: "
 				+ df.format(order.cost()));
+		
 	}
 }

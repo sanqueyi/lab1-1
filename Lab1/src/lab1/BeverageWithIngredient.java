@@ -6,24 +6,7 @@ public class BeverageWithIngredient extends Beverage {
 
 	public BeverageWithIngredient(Beverage drink) {
 		this.drink = drink;
-	    if (drink instanceof Espresso){
-	    	this.description = "Esspresso";
-	    }
-	    else if (drink instanceof Decaf){
-	    	this.description = "Decaf";
-	    }
-	    else if (drink instanceof HouseBlend){
-	    	this.description = "HouseBlend";
-	    }
-	    else if (drink instanceof RedTea){
-	    	this.description = "RedTea";
-	    }
-	    else if (drink instanceof GreenTea){
-	    	this.description = "GreenTea";
-	    }
-	    else {
-	    	this.description = "WhiteTea";
-	    }
+	  
 	}
 	
 	public String getDescription(){
