@@ -14,7 +14,7 @@ public class GreenTeaTest {
 
 	@Test(timeout = 1000)
 	public void testGetDescriptionAndCost() {
-		Assert.assertEquals("Green Tea", gt.getDiscription());
+		Assert.assertEquals("Green Tea", gt.getDescription());
 		gt.setSize("large");
 		Assert.assertEquals(1.7, gt.cost(), 0);
 	}

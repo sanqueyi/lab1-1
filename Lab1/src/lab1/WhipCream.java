@@ -2,11 +2,12 @@ package lab1;
 
 public class WhipCream extends BeverageWithIngredient {
 	public WhipCream(Beverage drink) {
-		super(drink);
-		description += " whip";
+		this.drink=drink;
 	}
-
+    public String getDescription(){
+    	return drink.getDescription() + " Whip";
+    }	
 	public double cost() {
-		return 0.3 + super.cost();
+		return 0.3 + drink.cost();
 	}
 }
