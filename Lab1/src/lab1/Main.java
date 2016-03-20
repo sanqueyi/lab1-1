@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		String[] disArr = new String[args.length];
 		for (int j = 0; j < args.length; j++) {
-			disArr[j] = args[j].toLowerCase();//what the fuck?
+			disArr[j] = args[j].toLowerCase();
 		}
 
 		int i;
@@ -27,17 +27,19 @@ public class Main {
 			beveStr = disArr[0];
 		}
 
-		Beverage order=
+		Beverage order=CreatOrder.getOrder(disArr,i,beveStr);
 		/**
 		 * How do I get the description of each order instead of doing this
 		 * stupid thing forever (except for printing the args)?
 		 */
-		System.out.println(order.getDescription());
-		// and so on...
+		if(order!=null){
+			System.out.println(order.getDescription());
+			
 
-		DecimalFormat df = new DecimalFormat(".0");
-		System.out.println("The total cost of your order is: "
-				+ df.format(order.cost()));
-		
+			DecimalFormat df = new DecimalFormat(".0");
+			System.out.println("The total cost of your order is: "
+					+ df.format(order.cost()));
+		}
+				
 	}
 }
